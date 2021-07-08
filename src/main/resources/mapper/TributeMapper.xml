@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jingling.eforum.mapper.TributeMapper">
+<insert id="ins" parameterType="com.jingling.eforum.entity.Tribute">
+insert into tribute( type, name, people, phone, email, foru, profuct)
+values(#{type},#{name},#{people},#{phone},#{email},#{foru},#{product})
+
+</insert>
+</mapper>
